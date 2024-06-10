@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>alumnosADD</h1>
+
+    <div style="text-align: center;">
+        <h2>Formulario CRUD para alumnos</h2>
+        <form action="alumnosAdd" method="POST">
+        </form><br><br>
+        <a href="{% url 'crud' %}">Volver</a>
+        <br>
+        <div id="idMensajes">
+            {% if mensajes %}
+            {{mensajes}}
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
